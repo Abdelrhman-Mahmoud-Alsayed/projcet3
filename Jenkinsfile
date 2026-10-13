@@ -7,7 +7,7 @@ pipeline {
 
     environment {
         APP_NAME = 'new-app'
-        REPO_URL = 'https://github.com/ossmaahmed/multi-branch'
+        REPO_URL = 'https://github.com/Abdelrhman-Mahmoud-Alsayed/projcet3.git'
     }
 
     stages {
