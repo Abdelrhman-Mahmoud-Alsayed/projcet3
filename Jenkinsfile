@@ -1,15 +1,15 @@
-pipeline {
+pipeline { 
     agent any
- 
+
     environment {
-        APP_NAME = 'app-hello-nti' 
-        REPO_URL = "https://github.com/MohamedMagdy840/jenkins-repo.git"
+        APP_NAME = 'new-app'
+        REPO_URL = "https://github.com/abdelrhman9004/jenkins-repo.git"
     }
 
     stages {
         stage('Getting Repo files') {
             steps {
-                git branch: "main", credentialsId: 'jenkins-token', url: "${REPO_URL}"
+                git branch: "${GIT_BRANCH}", credentialsId: 'github', url: "${REPO_URL}"
             }
         }
 
